@@ -13,5 +13,5 @@ window.INVITE = {
   rsvpEndpoint: '',
 
   // Optional background music, e.g. 'assets/music.mp3'. Empty = no music, no button.
-  music: ''
+  music: 'assets/music.m4a'
 };
