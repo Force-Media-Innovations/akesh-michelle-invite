@@ -1,0 +1,7 @@
+{
+  "name": "akesh-michelle-invite",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve@14.2.4 -l 3000 ."
+  }
+}

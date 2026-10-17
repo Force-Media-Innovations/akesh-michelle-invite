@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akesh &amp; Michelle · 10 December 2026</title>
+<meta name="description" content="With the blessings of the Jayarajan and Ferreira families, please join us in celebrating the union of Akesh and Michelle. Thursday, 10 December 2026, Sri Venkateshwara Maha Vishnu Moorthy Kovil, Dehiwala.">
+<meta name="theme-color" content="#fbe9c8">
+<meta name="color-scheme" content="only light">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Akesh &amp; Michelle · Wedding Invitation">
+<meta property="og:description" content="Thursday, 10 December 2026 · Sri Venkateshwara Maha Vishnu Moorthy Kovil, Dehiwala">
+<meta property="og:image" content="assets/intro-poster.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Dancing+Script:wght@500;600&family=Great+Vibes&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero.webp">
+<link rel="icon" href="assets/ganesha.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+
+<!-- Desktop backdrop (the invite sits in a phone-width column) -->
+<div class="backdrop" aria-hidden="true"></div>
+
+<!-- 1. Tap to open -->
+<div class="gate" id="gate">
+  <div class="gate__inner">
+    <img class="gate__ganesha" src="assets/ganesha.svg" alt="">
+    <p class="gate__guest" id="guestLine" hidden></p>
+    <p class="gate__pre">The wedding of</p>
+    <h1 class="gate__names">Akesh <span>&amp;</span> Michelle</h1>
+    <p class="gate__date">10 · 12 · 2026</p>
+    <button class="gate__btn" id="openBtn" type="button">
+      <span>Tap to open</span>
+    </button>
+  </div>
+</div>
+
+<!-- 2. Intro video (no controls, never fullscreen) -->
+<div class="intro" id="intro" aria-hidden="true">
+  <video id="introVideo" poster="assets/intro-poster.webp"
+    muted playsinline webkit-playsinline preload="auto"
+    disablepictureinpicture disableremoteplayback x-webkit-airplay="deny"
+    controlslist="nodownload nofullscreen noremoteplayback noplaybackrate">
+    <source src="assets/intro.mp4" type="video/mp4">
+    <source src="assets/intro.webm" type="video/webm">
+  </video>
+  <div class="intro__glow"></div>
+  <button class="intro__skip" id="skipBtn" type="button">Skip</button>
+</div>
+
+<main class="page" id="page">
+
+  <!-- 3. Invitation -->
+  <section class="card hero" id="hero">
+    <div class="hero__bg"><img src="assets/hero.webp" alt=""></div>
+    <div class="hero__content">
+      <img class="hero__ganesha r" src="assets/ganesha.svg" alt="">
+      <p class="hero__blessing r">With the blessings of<br>the <b>Jayarajan</b> and <b>Ferreira</b> families,<br>please join us in celebrating<br>the union of</p>
+      <h1 class="hero__names">
+        <span class="name name--a" aria-label="Akesh">AKESH</span>
+        <span class="and r"><i class="rule"></i><em>and</em><i class="rule"></i></span>
+        <span class="name name--b" aria-label="Michelle">MICHELLE</span>
+      </h1>
+      <p class="hero__tag r">Where love finds its forever</p>
+      <svg class="hero__heart r" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21s-8.5-5.4-10.8-10.1C-.5 7.2 1.6 2 6.3 2 9 2 10.9 3.7 12 5.6 13.1 3.7 15 2 17.7 2c4.7 0 6.8 5.2 5.1 8.9C20.5 15.6 12 21 12 21z" fill="#B47F3A"/></svg>
+      <p class="hero__save r">Save the date</p>
+      <div class="hero__date r">
+        <span>Thursday</span><strong>10</strong><span>December</span>
+      </div>
+      <p class="hero__year r">2026</p>
+      <p class="hero__time r">9.30 A.M. onwards</p>
+      <p class="hero__venue r">Sri Venkateshwara Maha Vishnu<br>Moorthy Kovil, Dehiwala</p>
+      <img class="hero__lotus r" src="assets/lotus.svg" alt="">
+    </div>
+    <div class="scroll-cue" id="scrollCue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- 4. Venue + countdown -->
+  <section class="card venue" id="venue">
+    <div class="venue__bg"><img src="assets/venue.webp" alt="Watercolour of Sri Venkateshwara Maha Vishnu Moorthy Kovil, Dehiwala" loading="lazy"></div>
+    <a class="venue__map r" id="mapLink" target="_blank" rel="noopener" aria-label="Open the venue in Google Maps">
+      <img class="venue__click" src="assets/clickhere.svg" alt="">
+      <img class="venue__pin" src="assets/pin.webp" alt="">
+    </a>
+    <div class="countdown">
+      <img class="countdown__orn countdown__orn--top r" src="assets/ornament.svg" alt="">
+      <p class="countdown__lead r">We can't wait to see you in..</p>
+      <div class="countdown__grid r" id="countdown">
+        <div><b data-u="d">--</b><small>Days</small></div><i>:</i>
+        <div><b data-u="h">--</b><small>Hours</small></div><i>:</i>
+        <div><b data-u="m">--</b><small>Minutes</small></div><i>:</i>
+        <div><b data-u="s">--</b><small>Seconds</small></div>
+      </div>
+      <img class="countdown__orn r" src="assets/ornament.svg" alt="">
+      <a class="calendar r" id="calLink" href="#" download="akesh-michelle-wedding.ics">Add to calendar</a>
+    </div>
+  </section>
+
+  <!-- 5. RSVP -->
+  <section class="card rsvp" id="rsvp">
+    <div class="rsvp__bg"><img src="assets/hero.webp" alt="" loading="lazy"></div>
+    <h2 class="rsvp__title r">RSVP</h2>
+    <div class="rsvp__panel r">
+      <img class="corner corner--tl" src="assets/corner.webp" alt="">
+      <img class="corner corner--tr" src="assets/corner.webp" alt="">
+      <img class="corner corner--bl" src="assets/corner.webp" alt="">
+      <img class="corner corner--br" src="assets/corner.webp" alt="">
+      <form id="rsvpForm" novalidate>
+        <label class="lbl" for="rsvpName">Your name</label>
+        <input id="rsvpName" name="name" type="text" autocomplete="name" required>
+
+        <p class="lbl">Will you be attending our wedding?</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="attending" value="Joyfully accepts" required><span>Joyfully accepts</span></label>
+          <label class="choice"><input type="radio" name="attending" value="Regretfully declines"><span>Regretfully declines</span></label>
+        </div>
+
+        <div class="guests" id="guestsRow">
+          <p class="lbl">Number of guests</p>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Fewer guests">−</button>
+            <output id="guestCount">1</output>
+            <button type="button" data-step="1" aria-label="More guests">+</button>
+          </div>
+        </div>
+
+        <label class="lbl" for="rsvpNote">Leave a note or blessing for the bride and groom:</label>
+        <textarea id="rsvpNote" name="note" rows="3"></textarea>
+
+        <button class="submit" type="submit">RSVP</button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="end">
+    <img src="assets/lotus.svg" alt="">
+    <p>Akesh &amp; Michelle</p>
+    <small>10 · 12 · 2026</small>
+  </footer>
+</main>
+
+<!-- Petals fall over the whole invitation, above the cards -->
+<canvas class="petals" id="petals" aria-hidden="true"></canvas>
+
+<button class="music" id="musicBtn" type="button" aria-label="Music on or off" hidden>
+  <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+</button>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
