@@ -10,7 +10,7 @@ window.INVITE = {
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Sri+Venkateshwara+Maha+Vishnu+Moorthy+Kovil+Dehiwala',
 
   // Google Apps Script web app URL (see apps-script.gs). Empty = RSVPs are not saved.
-  rsvpEndpoint: '',
+  rsvpEndpoint: 'https://script.google.com/macros/s/AKfycbwD625zFUam6iP2RJpkRqU-M9VEjG7uAOO7fap5PlsPrc094yZP_E2aP-EPQoAvSuHs/exec',
 
   // Optional background music, e.g. 'assets/music.mp3'. Empty = no music, no button.
   music: 'assets/music.m4a'
